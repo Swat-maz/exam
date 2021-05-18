@@ -1,0 +1,296 @@
+.block-views-blockhomepage-services-block-1{
+  text-transform: uppercase;
+  h2{
+    margin-bottom: 95px;
+    @include title;
+  }
+  .form-group{
+    .view-content{
+      display: flex;
+      text-align: center;
+      h2{
+        display: none;
+      }
+      .content{
+        padding: 0 10px;
+        .field--name-field-services-photo{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 35px;
+        }
+        .field--name-field-taxonom{
+          a{
+            color: $black;
+            @include clear();
+            font-size: $big;
+          }
+          margin-bottom: 20px;
+        }
+        .field--type-text-with-summary{
+          color: $gray;
+          font-size: $small;
+        }
+        .field--name-extra-field-readmore-extrafield{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          a{
+            @include clear();
+            color: $white;
+            background-color: $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.block-views-blockhomepage-projects-block-1{
+  text-transform: uppercase;
+  h2{
+    margin-bottom: 25px;
+    margin-top: 95px;
+    text-align: center;
+    @include title;
+  }
+  .form-group{
+    padding-top: 70px;
+    background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 10px,
+      #DDDCDD 11px,
+      #DDDCDD 11px);
+    //background: repeating-linear-gradient(-45deg, gray 1px, gray 1px, white 4px, white 7px);
+    .view-content{
+      display: flex;
+      text-align: center;
+      h2{
+        display: none;
+      }
+      .content{
+        margin: 0 10px;
+        background-color: $white;
+        border-bottom: 1px solid $black;
+        padding-bottom: 10px;
+        .field--name-field-image{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+        }
+        .field--name-field-taxonom{
+          a{
+            &[href="/taxonomy/term/1"]{
+              color: #1BBC9B;
+            }
+            &[href="/taxonomy/term/3"]{
+              color: #9F5FB7;
+            }
+            &[href="/taxonomy/term/2"]{
+              color:  #E84C3D;
+            }
+            &[href="/taxonomy/term/4"]{
+              color: #32ADE1;
+            }
+            @include clear();
+            font-size: $small;
+          }
+          margin-bottom: 20px;
+        }
+        .field--name-field-projects-name{
+          color: $black;
+          font-size: $big;
+        }
+        .field--name-extra-field-readmore-extrafield{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          a{
+            @include clear();
+            line-height: 0;
+            color: $white;
+            background-color: $black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .pager-nav{
+      .pagination{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 150px;
+        margin-top: 50px;
+        & > li{
+          & > a {
+            background-color: inherit;
+            border-radius: 50%;
+            border: none;
+            font-size: 14px;
+            color: #646464;
+            font-weight: 700;
+            &:hover{
+              background-color: #DDDCDD;
+              color: $white;
+            }
+          }
+        }
+        .active{
+          a{
+            background-color: #DDDCDD;
+          }
+        }
+      }
+    }
+  }
+}
+.block-views-blockour-team-block-1{
+  text-transform: uppercase;
+  text-align: center;
+  h2{
+    @include title;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .form-group {
+    .view-content {
+      display: flex;
+      text-align: center;
+      .views-row{
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+        h2 {
+          display: none;
+        }
+        .content{
+          display: flex;
+          flex-direction: column;
+          .field--name-field-first-name-last-name{
+            font-size: $big;
+            color: $black;
+            margin-top: 40px;
+          }
+          .field--name-field-position{
+            a{
+              @include clear;
+              color: $gray;
+              font-size: $small;
+            }
+          }
+          .field--name-extra-field-readmore-extrafield {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            a {
+              @include clear();
+              line-height: 0;
+              color: $white;
+              background-color: $black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100px;
+              height: 30px;
+            }
+          }
+          .social-media-links--platforms{
+            margin-top: 22px;
+            margin-left: 45px;
+            width: 50%;
+            display: flex;
+            li{
+              margin-right: 10px;
+            }
+          }
+          .flag-like{
+            align-self: end;
+            width: 30px;
+            display: block;
+            position: relative;
+            margin-right: 45px;
+            bottom: 42px;
+            a{
+              font-size: 20px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.block-views-blockhomepage-news-block-1{
+  text-transform: uppercase;
+  &>h2{
+    @include title;
+  }
+  .form-group .view-content{
+    display: flex;
+    background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 10px,
+      #DDDCDD 11px,
+      #DDDCDD 11px);
+    .views-row{
+      h2{
+        display: none;
+      }
+      .content{
+        .layout--threecol-section{
+          .layout__region--first{
+            text-align: center;
+            max-width: 90px;
+          .block:nth-child(1){
+            font-size: 20px;
+            color: $black;
+            margin-bottom: -10px;
+          }
+            .block:nth-child(2){
+              font-size: 35px;
+              color: $blue;
+              margin-bottom: -10px;
+            }
+            .block:nth-child(3){
+              font-size: 12px;
+              color: $gray;
+            }
+          }
+          .layout__region--second{
+            display: flex;
+            font-size: 12px;
+            max-width: 500px;
+            .field--name-field-who-writer{
+              color: $gray;
+              margin-right: 5px;
+            }
+            .field--name-field-taxonom{
+              color: $blue;
+            }
+          }
+          .layout__region--third{
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+.fa{
+  background-color: #6E9BCA;
+  color: $white;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

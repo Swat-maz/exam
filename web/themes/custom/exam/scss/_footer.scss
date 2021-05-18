@@ -1,0 +1,14 @@
+.footer{
+  border-top: none;
+  background-color: $black;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  .container{
+    .region-footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
