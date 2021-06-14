@@ -1,19 +1,28 @@
 .navbar-default{
   background-image: url("../src/header.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
 
   min-height: 700px;
   .container{
+    display: flex;
+    margin-top: 50px;
     .navbar-header{
-      width: 100%;
+      //width: 100%;
+      .navbar-toggle{
+        //position: absolute;
+        right: 0;
+        bottom: 100px;
+        z-index: 5;
+      }
       .region-navigation{
         display: flex;
         background-color: $white;
         align-items: center;
         .block-block-content .field--name-body{
           padding: 35px;
+          width: 217px;
         }
         .logo{
           margin-left: 15px;
@@ -48,12 +57,29 @@
         }
       }
     }
+    .navbar-collapse{
+      background-color: $white;
+      width: 100%;
+      z-index: 3;
+      .region-navigation-collapsible{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        .nav > li > a{
+          padding: 10px 10px;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 #block-creativity{
   position: absolute;
-  bottom: 350px;
-  left: 150px;
+  bottom: 300px;
+  left: 500px;
   text-transform: uppercase;
   .field--name-body{
     display: flex;
@@ -73,5 +99,15 @@
       font-size: $small;
       color: $blue;
     }
+  }
+}
+@media screen and (max-width: 767px){
+  .navbar-default .container .navbar-collapse .region-navigation-collapsible{
+    flex-direction: column;
+  }
+  .navbar .logo{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
   }
 }

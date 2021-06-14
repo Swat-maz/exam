@@ -1,0 +1,36 @@
+@import "mixines";
+@media screen and (min-width: 1250px){
+  .container{
+    width: 1250px;
+  }
+}
+@import "view";
+@import "block-news";
+@import "footer";
+@import "header";
+@import "block-about";
+@import "contact-up-page";
+body{
+  margin-top: 0;
+}
+header, footer{
+  .block-block-content .field--name-body{
+    background-color: #373645;
+    p{
+      text-align: center;
+      font-size: 30px;
+      &:first-child{
+        color: #6e9bca;
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+      &:last-child{
+        color: #e4e4e6;
+        font-size: 15px;
+      }
+    }
+
+  }
+}
+@import "media";

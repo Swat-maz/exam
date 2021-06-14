@@ -4,29 +4,37 @@ $gray: #CCCCCC;
 $white: #ffffff;
 $big: 20px;
 $small: 12px;
+//$procent: 41.6%;
 @mixin clear{
   text-decoration: none;
 }
-@mixin title{
+@mixin title($procent){
+  position: relative;
   text-align: center;
   font-weight: 600;
   background-color: $white;
+  z-index: 2;
   &:before{
     display: block;
     content: '';
     border: 1px solid $gray;
-    width: 41.6%;
+    width: $procent;
+    //width: 41.6%;
     position: relative;
     top: 14px;
+    z-index: -1;
   }
   &:after{
     display: block;
     content: '';
     border: 1px solid $gray;
-    width: 41.6%;
+    width: $procent;
     position: relative;
     text-align: end;
     top: -22px;
     margin-left: auto;
   }
+}
+@media (max-width: 991px){
+
 }
