@@ -1,0 +1,110 @@
+.block-views-blockhomepage-news-block-1{
+  font-style: normal;
+  text-transform: uppercase;
+  &>h2{
+    @include title(42%);
+  }
+  .form-group{
+    background-image: repeating-linear-gradient(-45deg,
+    transparent,
+    transparent 10px,
+    #DDDCDD 11px,
+    #DDDCDD 11px);
+    padding: 60px 0;
+  }
+  .view-content{
+    display: flex;
+    .views-row{
+      &:first-child{
+        margin-right: 20px;
+      }
+      .news.teaser{
+        background-color: $white;
+        padding: 25px 12px;
+      }
+      h2{
+        display: none;
+      }
+      .content{
+        .layout--threecol-section{
+          .layout__region--first{
+            text-align: center;
+            max-width: 75px;
+            margin-right: 15px;
+            border-right: 1px solid $gray;
+            .block:nth-child(1){
+              font-size: 20px;
+              color: $black;
+              margin-bottom: -10px;
+            }
+            .block:nth-child(2){
+              font-size: 45px;
+              color: $blue;
+              font-weight: 700;
+              margin-bottom: -10px;
+            }
+            .block:nth-child(3){
+              font-size: 15px;
+              color: $gray;
+            }
+          }
+          .layout__region--second{
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            width: 350px;
+            .field--name-field-who-writer{
+              color: $gray;
+              margin-right: 5px;
+            }
+            .block-field-blocknodenewsfield-first-name-last-name{
+              width: max-content;
+            }
+            .block-field-blocknodenewsfield-taxonom{
+              width: 50px;
+            }
+            .field--name-field-taxonom{
+              color: $blue;
+            }
+          }
+          .layout__region--third{
+            color: $gray;
+            margin-left: 40px;
+          }
+        }
+        .layout--onecol .layout__region{
+          width: 500px;
+        }
+        .layout--onecol{
+          .layout__region--content{
+            margin-left: 74px;
+            padding-left: 16px;
+            border-left: 1px solid $gray;
+            margin-top: 20px;
+            .block-field-blocknodenewstitle{
+              font-size: 24px;
+              a{
+                color: $black;
+              }
+            }
+            .block-field-blocknodenewsbody{
+              font-size: 13px;
+            }
+            .block-extra-field-blocknodenewsextra-field-readmore-extrafield{
+              text-align: end;
+              margin-top: 10px;
+              .readmore-extrafield-link{
+                background-color: $black;
+                color: $white;
+                padding: 10px;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

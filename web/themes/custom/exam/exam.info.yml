@@ -13,6 +13,7 @@ regions:
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
+  about: 'About'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'

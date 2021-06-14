@@ -1,10 +1,15 @@
 @import "mixines";
-.container{
-  max-width: 1250px;
+@media screen and (min-width: 1250px){
+  .container{
+    width: 1250px;
+  }
 }
 @import "view";
+@import "block-news";
 @import "footer";
 @import "header";
+@import "block-about";
+@import "contact-up-page";
 body{
   margin-top: 0;
 }
@@ -28,3 +33,4 @@ header, footer{
 
   }
 }
+@import "media";

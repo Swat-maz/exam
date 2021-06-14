@@ -1,8 +1,9 @@
 .block-views-blockhomepage-services-block-1{
   text-transform: uppercase;
+  margin-top: 80px;
   h2{
     margin-bottom: 95px;
-    @include title;
+    @include title(41.6%);
   }
   .form-group{
     .view-content{
@@ -55,7 +56,7 @@
     margin-bottom: 25px;
     margin-top: 95px;
     text-align: center;
-    @include title;
+    @include title(41.6%);
   }
   .form-group{
     padding-top: 70px;
@@ -126,7 +127,7 @@
       .pagination{
         display: flex;
         justify-content: center;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         margin-top: 50px;
         & > li{
           & > a {
@@ -155,7 +156,7 @@
   text-transform: uppercase;
   text-align: center;
   h2{
-    @include title;
+    @include title(41.6%);
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -228,59 +229,14 @@
     }
   }
 }
-.block-views-blockhomepage-news-block-1{
-  text-transform: uppercase;
-  &>h2{
-    @include title;
+.block-views-blockslider-block-1{
+  h2{
+    @include title(41.6%);
+    margin-bottom: 30px;
   }
-  .form-group .view-content{
-    display: flex;
-    background-image: repeating-linear-gradient(-45deg,
-      transparent,
-      transparent 10px,
-      #DDDCDD 11px,
-      #DDDCDD 11px);
-    .views-row{
-      h2{
-        display: none;
-      }
-      .content{
-        .layout--threecol-section{
-          .layout__region--first{
-            text-align: center;
-            max-width: 90px;
-          .block:nth-child(1){
-            font-size: 20px;
-            color: $black;
-            margin-bottom: -10px;
-          }
-            .block:nth-child(2){
-              font-size: 35px;
-              color: $blue;
-              margin-bottom: -10px;
-            }
-            .block:nth-child(3){
-              font-size: 12px;
-              color: $gray;
-            }
-          }
-          .layout__region--second{
-            display: flex;
-            font-size: 12px;
-            max-width: 500px;
-            .field--name-field-who-writer{
-              color: $gray;
-              margin-right: 5px;
-            }
-            .field--name-field-taxonom{
-              color: $blue;
-            }
-          }
-          .layout__region--third{
-            color: $gray;
-          }
-        }
-      }
+  .form-group{
+    h2{
+      display: none;
     }
   }
 }
@@ -293,4 +249,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-media-link-icon--facebook:hover,.social-media-link-icon--twitter:hover,.social-media-link-icon--linkedin:hover{
+  text-decoration: none;
+}
+.form-search::placeholder{
+  color: $white;
+}
+.form-submit{
+  background-color: $white;
+  color: $gray;
+  border-color: $gray;
+  height: 34px;
 }
